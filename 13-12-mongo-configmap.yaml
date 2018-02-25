@@ -6,8 +6,8 @@ data:
   init.sh: |
     #!/bin/bash
 
-    # Need to wait for the readiness health check to pass so that the
-    # mongo names resolve. This is kind of wonky.
+    # 名前解決ができるよう、Readiness probe が成功するのを待つ必要がある。
+    # あまりよくない方法。
     until ping -c 1 ${HOSTNAME}.mongo; do
       echo "waiting for DNS (${HOSTNAME}.mongo)..."
       sleep 2

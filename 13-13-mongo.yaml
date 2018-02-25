@@ -1,8 +1,11 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mongo
 spec:
+  selector:
+    matchLabels:
+      app: mongo
   serviceName: "mongo"
   replicas: 3
   template:
@@ -20,7 +23,7 @@ spec:
         ports:
         - containerPort: 27017
           name: web
-      # This container initializes the mongodb, then sleeps.
+      # このコンテナはmongodb を初期化した後、スリープする
       - name: init-mongo
         image: mongo:3.4.1
         command:
