@@ -1,5 +1,7 @@
 # 「入門Kubernetes」サンプルファイル Kubernetes 1.9対応版
 
+**書籍の[正誤表はこちら](https://github.com/doublemarket/kuar-examples-1-9/wiki/Errata)**
+
 このリポジトリは、オライリー・ジャパン「[入門Kubernetes](https://www.oreilly.co.jp/books/9784873118406/)」の原著である「[Kubernetes: Up and Running](http://shop.oreilly.com/product/0636920043874.do)」で提供されている[サンプルファイル](https://github.com/kubernetes-up-and-running/examples)を、Kubernetes 1.9に対応させて独自に公開しているものです。
 
 [元になったリポジトリ](https://github.com/kubernetes-up-and-running/examples)に置かれているファイルの間違いを修正したり、原著の執筆当時から古くなってしまっている情報を2018年2月時点の情報に更新してあります。
