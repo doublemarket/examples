@@ -21,7 +21,7 @@ spec:
           value: "mongodb://mongo-0.mongo:27017,\
             mongo-1.mongo:27017,mongo-2.mongo\
             :27017/dev?replicaSet=rs0"
-        - name: APP_ID
+        - name: APPLICATION_ID
           value: my-app-id
         - name: MASTER_KEY
           value: my-master-key

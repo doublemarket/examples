@@ -103,6 +103,7 @@ mv 5-1-kuard-pod.yaml kuard-pod.yaml
 ### [14-1-parse.yaml](https://github.com/doublemarket/kuar-example-1-9-temp/compare/36f0aa615b10617fea5f75ad0bf69d89d35b4164...master#diff-0d188bf328e1e92efc0f44bc4cc73b4a)
 
 - APIバージョンの変更(`extensions/v1beta1`から`apps/v1`)と、それに伴う`spec.selector`を追加しています。
+- 環境変数名が`APP_ID`となっていたのを、`APPLICATION_ID`に修正しています。
 
 ### [14-2-parse-service.yaml](https://github.com/doublemarket/kuar-example-1-9-temp/compare/36f0aa615b10617fea5f75ad0bf69d89d35b4164...master#diff-7c6544fc2f7cbce3905b5bb70727c3af)
 
